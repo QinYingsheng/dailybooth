@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>*照片展示博客</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #34495e;
+            padding: 0.5rem;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 1rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem;
+        }
+        
+        nav ul li a:hover {
+            background-color: #2c3e50;
+            border-radius: 4px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        main {
+            flex: 2;
+            padding-right: 2rem;
+        }
+        
+        aside {
+            flex: 1;
+        }
+        
+        article {
+            background-color: white;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        article h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        article p {
+            margin-bottom: 1rem;
+        }
+        
+        .photo-gallery {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .photo-gallery h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: opacity 0.3s;
+        }
+        
+        .gallery-item img:hover {
+            opacity: 0.9;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            main {
+                padding-right: 0;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>我的摄影博客</h1>
+        <p>记录生活中的美好瞬间</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">摄影作品</a></li>
+            <li><a href="#">旅行日记</a></li>
+            <li><a href="#">关于我</a></li>
+            <li><a href="#">联系方式</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <main>
+            <article>
+                <h2>春日里的樱花</h2>
+                <p>发布于：2023年3月15日</p>
+                <p>春天来了，公园里的樱花盛开，粉色的花瓣随风飘舞，美不胜收。我带着相机记录下了这美好的时刻，与大家分享。</p>
+                <p>拍摄樱花时，我尝试了不同的角度和光线，发现逆光拍摄能让花瓣显得更加通透。使用大光圈可以虚化背景，突出花朵的主体。</p>
+            </article>
+            
+            <article>
+                <h2>海边日落</h2>
+                <p>发布于：2023年2月28日</p>
+                <p>上周末去了海边，正好赶上日落时分。金色的阳光洒在海面上，波光粼粼，天空从蓝色渐变成橙红色，美得让人窒息。</p>
+                <p>拍摄日落时，我使用了渐变灰滤镜来平衡天空和海面的曝光，后期稍微调整了色温和对比度，让画面更加温暖。</p>
+            </article>
+        </main>
+        
+        <aside>
+            <div class="photo-gallery">
+                <h2>照片展示</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://source.unsplash.com/random/300x300?nature,1" alt="自然风光">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://source.unsplash.com/random/300x300?city,1" alt="城市景观">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://source.unsplash.com/random/300x300?portrait,1" alt="人像摄影">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://source.unsplash.com/random/300x300?animal,1" alt="动物世界">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://source.unsplash.com/random/300x300?travel,1" alt="旅行摄影">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://source.unsplash.com/random/300x300?food,1" alt="美食摄影">
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 我的摄影博客 | 版权所有</p>
+    </footer>
+</body>
+</html>
