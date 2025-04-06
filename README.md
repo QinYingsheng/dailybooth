@@ -64,7 +64,7 @@ css/style.css     - 样式表文件（当前样式内联在HTML中）
 
 ## 作者信息
 
-由AI助手生成的基础静态博客模板，可根据需要进行自定义开发。# 静态摄影博客网页 - README
+博客 - README
 
 ## 项目概述
 
@@ -97,7 +97,7 @@ css/style.css     - 样式表文件（当前样式内联在HTML中）
 1. **替换照片**：
    - 找到`<div class="gallery-grid">`部分
    - 替换`<img src="...">`中的URL为你自己的照片路径
-   - 示例：`<img src="images/myphoto1.jpg">`
+   - 示例：`<img src="images/1.jpg">`
 
 2. **修改博客文章**：
    - 在`<main>`部分找到`<article>`标签
