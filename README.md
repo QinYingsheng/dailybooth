@@ -4,6 +4,7 @@
 
 这是一个简单的静态摄影博客网页，包含博客文章展示区和照片展示区。网页设计简洁、响应式，适合个人摄影作品展示和博客写作。
 展示区： https://qinyingsheng.github.io/
+英文版： https://github.com/QinYingsheng/English-version-of-dailybooth
 
 ## 功能特点
 
