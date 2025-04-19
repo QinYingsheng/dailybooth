@@ -130,4 +130,5 @@ css/style.css     - 样式表文件（当前样式内联在HTML中）
 ## 作者信息
 Maker:@Qin .Ys 2025.4
 作者b站【Qin背书的个人空间-哔哩哔哩】 https://b23.tv/lI65s1Q
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=QinYingsheng&theme=github)
 
